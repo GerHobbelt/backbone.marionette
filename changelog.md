@@ -1,5 +1,5 @@
 ### v1.2.0 [view commit logs](https://github.com/marionettejs/backbone.marionette/compare/v1.1.0...v1.2.0)
-* Update Backbone to [1.1.0](https://github.com/jashkenas/backbone/compare/1.0.0...1.1.0)
+* Update Backbone to [1.1.1](https://github.com/jashkenas/backbone/compare/1.0.0...1.1.1)
 
 * Views
   * added the ability to customize the behavior of `triggers` preventDefault and stopPropagation
