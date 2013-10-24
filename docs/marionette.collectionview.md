@@ -105,10 +105,11 @@ of the object will be copied to the `itemView` instance's options.
 
 ```js
 CollectionView = Backbone.Marionette.CollectionView({
-  itemViewOptions: function(model) {
+  itemViewOptions: function(model, index) {
     // do some calculations based on the model
     return {
-      foo: "bar"
+      foo: "bar",
+      itemIndex: index
     }   
   }  
 });
@@ -320,6 +321,20 @@ method are triggered after rendering the view and adding it to the
 view's DOM element.
 
 ```js
+var MyCV = Marionette.CollectionView.extend({
+  // ...
+
+  onBeforeItemAdded: function(){
+    // ...
+  },
+
+  onAfterItemAdded: function(){
+    // ...
+  }
+});
+
+var cv = new MyCV({...});
+
 cv.on("before:item:added", function(viewInstance){
   // ...
 });
