@@ -229,7 +229,7 @@ Backbone.Marionette.CompositeView.extend({
 
 These will use the memory safe `listenTo`, and will set the context
 (the value of `this`) in the handler to be the view. Events are
-bound at the time of instantiation instantiation, and an exception will be thrown
+bound at the time of instantiation, and an exception will be thrown
 if the handlers on the view do not exist.
 
 The `modelEvents` and `collectionEvents` will be bound and
@@ -327,7 +327,7 @@ do not provide a helper method mechanism while Handlebars
 templates do.
 
 A `templateHelpers` attribute can be applied to any View object that
-renders a template. When this attribute is present it's contents 
+renders a template. When this attribute is present its contents 
 will be mixed in to the data object that comes back from the 
 `serializeData` method. This will allow you to create helper methods 
 that can be called from within your templates.
